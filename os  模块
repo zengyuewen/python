@@ -1,6 +1,20 @@
 import  os
-print os.getcwd() #获取当前工作目录路径
-print os.path.abspath('.') #获取当前工作目录路径
-print os.path.abspath('test.txt') #获取当前目录文件下的工作目录路径
-print os.path.abspath('..') #获取当前工作的父目录 ！注意是父目录路径
-print os.path.abspath(os.curdir) #获取当前工作目录路径
+
+
+print ("当前工作目录路径: %s" % os.getcwd())                    #获取当前工作目录路径
+print ("当前工作目录路径: %s"%os.path.abspath('.'))             #获取当前工作目录路径
+print ("当前工作目录路径: %s"%os.path.abspath(os.curdir))       #获取当前工作目录路径
+print ("当前目录文件下的工作目录路径: %s"%os.path.abspath(""))      #获取当前目录文件下的工作目录路径
+print ("当前工作的父目录: %s"%os.path.abspath('..'))               #获取当前工作的父目录 ！注意是父目录路径
+
+
+"""
+当前工作目录路径: F:\sublimescript\mypytest
+当前工作目录路径: F:\sublimescript\mypytest
+当前工作目录路径: F:\sublimescript\mypytest
+当前目录文件下的工作目录路径: F:\sublimescript\mypytest
+当前工作的父目录: F:\sublimescript
+[Finished in 0.1s]
+"""
+
+
